@@ -98,7 +98,7 @@ Plugin title bar (hyprbars) hanya bisa dibangun dari dalam sesi Hyprland.
 ### 2. Clone repo
 
 ```bash
-git clone https://github.com/USERNAME/hyprmac.git ~/hyprmac
+git clone https://github.com/Bilunzzz/hyprmac.git ~/hyprmac
 cd ~/hyprmac
 ```
 

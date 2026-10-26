@@ -24,4 +24,4 @@ Rilis pertama.
 - Tombol jendela merah/kuning/hijau (hyprbars), layar kunci ala macOS.
 - `install.sh` (dengan backup otomatis) dan `uninstall.sh`.
 
-[1.0]: https://github.com/USERNAME/hyprmac/releases/tag/v1.0
+[1.0]: https://github.com/Bilunzzz/hyprmac/releases/tag/v1.0
