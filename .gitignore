@@ -1,0 +1,13 @@
+# Disalin install.sh dari VERSION di root
+config/quickshell/hyprmac/VERSION
+
+# Ubahan pribadi tidak ikut repo
+config/hypr/lua/user.lua
+
+# Cache / editor
+__pycache__/
+*.qmlc
+.qmlls.ini
+.vscode/
+.idea/
+*~

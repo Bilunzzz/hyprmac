@@ -1,0 +1,93 @@
+// Menu bar ala macOS (dijalankan oleh ~/.config/hypr/scripts/restart-shell.sh)
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "spacing": 0,
+    "margin": "0",
+
+    "modules-left": ["custom/apple", "hyprland/window", "hyprland/workspaces"],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "battery",
+        "network",
+        "custom/spotlight",
+        "custom/control-center",
+        "clock"
+    ],
+
+    "custom/apple": {
+        "format": "\udb80\udc35",
+        "tooltip": false,
+        "on-click": "qs -c hyprmac ipc call applemenu toggle"
+    },
+
+    "hyprland/window": {
+        "format": "{class}",
+        "separate-outputs": true,
+        "icon": false,
+        "rewrite": {
+            "^$": "Finder",
+            "org.gnome.Nautilus": "Files",
+            "google-chrome": "Google Chrome",
+            "firefox": "Firefox",
+            "kitty": "Terminal",
+            "code|Code|codium|VSCodium": "Code",
+            "spotify|Spotify": "Spotify",
+            "discord|vesktop|equibop": "Discord",
+            "org.gnome.Calculator": "Calculator",
+            "(.*)\\.(.*)": "$2"
+        }
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "●",
+            "default": "○"
+        },
+        "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e+1\" })'",
+        "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e-1\" })'"
+    },
+
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+
+    "network": {
+        "format-wifi": "<span font_desc='Material Symbols Rounded 14' rise='-2pt'>wifi</span>",
+        "format-ethernet": "<span font_desc='Material Symbols Rounded 14' rise='-2pt'>lan</span>",
+        "format-disconnected": "<span font_desc='Material Symbols Rounded 14' rise='-2pt'>wifi_off</span>",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "on-click": "qs -c hyprmac ipc call controlcenter toggle"
+    },
+
+    "battery": {
+        "states": { "warning": 20, "critical": 10 },
+        "format": "{capacity}%  <span font_desc=\u0027Font Awesome 7 Free Solid 13\u0027>{icon}</span>",
+        "format-charging": "{capacity}%  <span font_desc=\u0027Font Awesome 7 Free Solid 13\u0027>\uf0e7 {icon}</span>",
+        "format-plugged": "{capacity}%  <span font_desc=\u0027Font Awesome 7 Free Solid 13\u0027>\uf1e6 {icon}</span>",
+        "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
+        "tooltip-format": "{timeTo}"
+    },
+
+    "custom/spotlight": {
+        "format": "<span font_desc='Material Symbols Rounded 14' rise='-2pt'>search</span>",
+        "tooltip": false,
+        "on-click": "~/.config/hypr/scripts/spotlight.sh"
+    },
+
+    "custom/control-center": {
+        "format": "<span font_desc='Material Symbols Rounded 14' rise='-2pt'>page_info</span>",
+        "tooltip": false,
+        "on-click": "qs -c hyprmac ipc call controlcenter toggle"
+    },
+
+    "clock": {
+        "format": "{:%a %d %b  %H.%M}",
+        "tooltip": false,
+        "on-click": "qs -c hyprmac ipc call notifications toggle"
+    }
+}
