@@ -10,7 +10,7 @@ Mission Control, Dynamic Island, Control Center, dan notifikasi *liquid glass*.
 ![Arch Linux](https://img.shields.io/badge/Arch%20Linux-i%20use%20arch%20btw-1793d1)
 ![lisensi](https://img.shields.io/badge/lisensi-MIT-green)
 
-![Tampilan hyprmac: menu bar, Dynamic Island, dan jendela Tentang Komputer Ini](screenshots/tentang-komputer-ini.png)
+![Desktop hyprmac: menu bar, Dynamic Island, dock, dan jendela dengan tombol merah/kuning/hijau](screenshots/desktop.jpg)
 
 </div>
 
@@ -19,6 +19,7 @@ Mission Control, Dynamic Island, Control Center, dan notifikasi *liquid glass*.
 ## Daftar isi
 
 - [Fitur](#fitur)
+- [Tampilan](#tampilan)
 - [Kebutuhan](#kebutuhan)
 - [Instalasi](#instalasi)
 - [Pintasan keyboard](#pintasan-keyboard)
@@ -50,6 +51,26 @@ Mission Control, Dynamic Island, Control Center, dan notifikasi *liquid glass*.
 | **Tentang Komputer Ini** | Logo distro, model laptop, chip, memori, grafis, dan sistem. |
 
 > Bahasa antarmuka: Indonesia.
+
+## Tampilan
+
+| | |
+|:---:|:---:|
+| ![Launchpad](screenshots/launchpad.jpg) | ![Mission Control](screenshots/mission-control.jpg) |
+| **Launchpad** | **Mission Control** |
+| ![Dynamic Island](screenshots/island.jpg) | ![Control Center](screenshots/control-center.jpg) |
+| **Dynamic Island** | **Control Center** |
+| ![Notification Center](screenshots/notification-center.jpg) | ![Toolbar screenshot](screenshots/screenshot-toolbar.jpg) |
+| **Notification Center** | **Screenshot ala ⌘⇧5** |
+| ![Layar kunci](screenshots/lockscreen-compact.jpg) | ![Layar kunci dengan lirik](screenshots/lockscreen-lyrics.jpg) |
+| **Layar kunci** | **Layar kunci + lirik** |
+| ![Spotlight](screenshots/spotlight.jpg) | ![Menu Apple](screenshots/apple-menu.jpg) |
+| **Spotlight** | **Menu Apple** |
+
+<p align="center">
+  <img src="screenshots/tentang-komputer-ini.jpg" width="49%" alt="Tentang Komputer Ini"><br>
+  <b>Tentang Komputer Ini</b>
+</p>
 
 ## Kebutuhan
 
