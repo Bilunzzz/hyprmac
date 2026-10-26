@@ -10,6 +10,8 @@ Mission Control, Dynamic Island, Control Center, dan notifikasi *liquid glass*.
 ![Arch Linux](https://img.shields.io/badge/Arch%20Linux-i%20use%20arch%20btw-1793d1)
 ![lisensi](https://img.shields.io/badge/lisensi-MIT-green)
 
+![Tampilan hyprmac: menu bar, Dynamic Island, dan jendela Tentang Komputer Ini](screenshots/tentang-komputer-ini.png)
+
 </div>
 
 ---
@@ -325,6 +327,7 @@ hyprmac/
 ├── install.sh / uninstall.sh
 ├── VERSION, CHANGELOG.md
 ├── wallpapers/                 wallpaper bawaan
+├── screenshots/                gambar untuk README
 └── config/
     ├── hypr/
     │   ├── hyprland.lua        titik masuk config (Lua)
