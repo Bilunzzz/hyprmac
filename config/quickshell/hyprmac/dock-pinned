@@ -1,0 +1,11 @@
+# Aplikasi di dock (id file .desktop tanpa ".desktop"), urut dari kiri.
+# Yang belum terpasang dilewati. Disimpan langsung terbaca ulang.
+# Cari id aplikasi: ls /usr/share/applications ~/.local/share/applications
+org.gnome.Nautilus
+firefox
+google-chrome
+kitty
+code
+spotify
+discord
+org.gnome.Settings

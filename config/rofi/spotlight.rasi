@@ -1,0 +1,89 @@
+/* hyprmac: Spotlight ala macOS untuk rofi (dipakai spotlight.sh dan clipboard.sh).
+ * Latar tembus pandang; blur-nya dari Hyprland (layer rule "rofi"). */
+
+* {
+    font: "Adwaita Sans 12";
+
+    glass:    #1e1e24b8;
+    edge:     #ffffff2e;
+    divider:  #ffffff1a;
+    accent:   #0a84ffe6;
+    text:     #ffffffee;
+    subtext:  #ffffff80;
+
+    background-color: transparent;
+    text-color:       @text;
+    margin:           0;
+    padding:          0;
+    spacing:          0;
+}
+
+window {
+    location:         north;
+    y-offset:         180px;
+    width:            640px;
+    border:           1px;
+    border-color:     @edge;
+    border-radius:    18px;
+    background-color: @glass;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    padding:  14px 16px;
+    spacing:  12px;
+    children: [ icon-search, entry ];
+}
+
+icon-search {
+    expand:         false;
+    filename:       "search";
+    size:           26px;
+    vertical-align: 0.5;
+}
+
+entry {
+    font:              "Adwaita Sans 20";
+    placeholder:       "Spotlight Search";
+    placeholder-color: @subtext;
+    vertical-align:    0.5;
+}
+
+listview {
+    lines:        8;
+    columns:      1;
+    fixed-height: false;
+    scrollbar:    false;
+    border:       1px 0 0;
+    border-color: @divider;
+    padding:      6px;
+}
+
+element {
+    padding:       8px 10px;
+    spacing:       12px;
+    border-radius: 10px;
+}
+
+element selected.normal,
+element selected.active {
+    background-color: @accent;
+    text-color:       #ffffff;
+}
+
+element-icon {
+    size:           28px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color:     inherit;
+    vertical-align: 0.5;
+}
+
+message {
+    padding: 8px 16px;
+}

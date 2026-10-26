@@ -1,0 +1,87 @@
+/* Menu bar ala macOS: tembus pandang + blur (layer rule di hypr/lua/shell.lua) */
+
+* {
+    font-family: "SF Pro Text", "Inter", "Adwaita Sans", "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 34, 0.55);
+    color: rgba(255, 255, 255, 0.92);
+}
+
+tooltip {
+    background: rgba(40, 40, 44, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+}
+
+#custom-apple,
+#window,
+#workspaces,
+#tray,
+#battery,
+#network,
+#custom-spotlight,
+#custom-control-center,
+#clock {
+    padding: 0 9px;
+    margin: 3px 1px;
+    border-radius: 5px;
+    background: transparent;
+    color: inherit;
+}
+
+#custom-apple {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+    padding: 0 12px 0 16px;
+}
+
+#window {
+    font-weight: bold;
+}
+
+#workspaces button {
+    padding: 0 3px;
+    color: rgba(255, 255, 255, 0.45);
+    background: transparent;
+    font-size: 9px;
+}
+
+#workspaces button.active {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Ikon kanan memakai <span> Material Symbols / Font Awesome di config */
+#network,
+#custom-spotlight,
+#custom-control-center {
+    padding: 0 7px;
+}
+
+#battery.warning:not(.charging) {
+    color: #febc2e;
+}
+
+#battery.critical:not(.charging) {
+    color: #ff5f57;
+}
+
+#clock {
+    padding-right: 16px;
+}
+
+/* Sorotan saat diarahkan, seperti item menu bar macOS */
+#custom-apple:hover,
+#window:hover,
+#network:hover,
+#battery:hover,
+#custom-spotlight:hover,
+#custom-control-center:hover,
+#clock:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
