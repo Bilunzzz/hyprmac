@@ -44,7 +44,7 @@ Mission Control, Dynamic Island, Control Center, dan notifikasi *liquid glass*.
 | **Spotlight** | Pencarian aplikasi (rofi) di `SUPER + SPACE`. |
 | **Screenshot ala ⌘⇧5** | Toolbar melayang: Seluruh Layar / Jendela / Area, **Langsung** atau **Tunda** (5/10/20 detik), simpan ke folder, papan klip, atau editor. |
 | **Dialog daya** | Konfirmasi Matikan / Mulai Ulang / Log Out dengan hitung mundur 60 detik, seperti macOS. |
-| **Layar kunci** | Jam besar, foto profil, dan kolom kata sandi kaca (hyprlock). |
+| **Layar kunci** | Jam & notifikasi, kartu musik yang bisa diperbesar dengan latar sampul album, lirik berjalan, kolom kata sandi kaca, dan animasi meluncur ke atas saat dibuka. |
 | **Tentang Komputer Ini** | Logo distro, model laptop, chip, memori, grafis, dan sistem. |
 
 > Bahasa antarmuka: Indonesia.

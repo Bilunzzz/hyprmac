@@ -26,7 +26,8 @@ terminate_clients() {
 
 case "$1" in
     lock)
-        pidof hyprlock || hyprlock
+        # Layar kunci Quickshell; hyprlock kalau shell tidak berjalan
+        qs -c hyprmac ipc call lock lock 2>/dev/null || pidof hyprlock || hyprlock
         ;;
     exit)
         terminate_clients

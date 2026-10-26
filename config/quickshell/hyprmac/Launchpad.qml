@@ -59,6 +59,13 @@ PanelWindow {
         right: true
     }
     exclusionMode: ExclusionMode.Ignore
+
+    // Tangkap klik hanya saat terbuka, supaya panel yang animasi tutupnya
+    // tersendat (mis. GPU sibuk) tidak memblokir seluruh layar
+    mask: Region {
+        width: root.shown ? root.width : 0
+        height: root.shown ? root.height : 0
+    }
     color: "transparent"
 
     WlrLayershell.namespace: "macshell-launchpad"

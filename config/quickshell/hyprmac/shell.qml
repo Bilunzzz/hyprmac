@@ -12,6 +12,7 @@
 //   qs -c hyprmac ipc call screenshot open
 //   qs -c hyprmac ipc call missioncontrol toggle
 //   qs -c hyprmac ipc call island brightness
+//   qs -c hyprmac ipc call lock lock|preview
 
 import QtQuick
 import Quickshell
@@ -52,4 +53,6 @@ ShellRoot {
     ScreenshotBar {}
 
     MissionControl {}
+
+    Lock {}
 }

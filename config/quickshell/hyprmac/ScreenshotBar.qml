@@ -51,15 +51,16 @@ PanelWindow {
     WlrLayershell.layer: WlrLayer.Overlay
     WlrLayershell.keyboardFocus: shown ? WlrKeyboardFocus.Exclusive : WlrKeyboardFocus.None
 
+    // Hanya menangkap klik saat terbuka (lihat catatan di PowerDialog.qml)
     mask: Region {
-        item: bar
+        item: root.shown ? bar : null
 
         Region {
             item: root.optionsOpen ? options : null
         }
 
         Region {
-            item: hintBox
+            item: root.shown ? hintBox : null
         }
     }
 

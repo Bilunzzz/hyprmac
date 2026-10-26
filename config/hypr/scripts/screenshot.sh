@@ -61,7 +61,7 @@ fi || exit 1
 
 case "$dest" in
     clipboard)
-        wl-copy < "$tmp"
+        wl-copy --type image/png < "$tmp"
         notify-send -a Screenshot -i "$tmp" "Screenshot disalin" "Tersimpan di papan klip"
         ;;
     edit)
@@ -73,7 +73,7 @@ case "$dest" in
     *)
         mkdir -p "$folder"
         mv "$tmp" "$folder/$name"
-        wl-copy < "$folder/$name"
+        wl-copy --type image/png < "$folder/$name"
         notify-send -a Screenshot -i "$folder/$name" "Screenshot" "Disimpan ke ${folder/#$HOME/\~}"
         ;;
 esac

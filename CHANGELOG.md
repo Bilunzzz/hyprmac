@@ -3,6 +3,21 @@
 Format mengikuti [Keep a Changelog](https://keepachangelog.com/id-ID/1.1.0/),
 versi mengikuti [Semantic Versioning](https://semver.org/lang/id/).
 
+## [Belum dirilis]
+
+### Ditambahkan
+
+- Layar kunci baru di Quickshell (session lock + PAM), gaya macOS liquid glass:
+  jam & tanggal, notifikasi, kartu musik yang bisa diperbesar (latar sampul
+  album di-blur), lirik tersinkron dari LRCLIB, dan animasi meluncur ke atas
+  saat terbuka. hyprlock tetap dipakai sebagai cadangan.
+- Mode pratinjau layar kunci: `qs -c hyprmac ipc call lock preview`.
+
+### Diperbaiki
+
+- Screenshot di clipboard selalu PNG, supaya bisa di-paste di Chrome, Discord, dll.
+- Panel layar penuh tidak lagi memblokir klik kalau animasi tutupnya tersendat.
+
 ## [1.0] - 2026-10-26
 
 Rilis pertama.
